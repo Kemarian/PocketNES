@@ -4,7 +4,7 @@ char *strcat_(char *dest, const char *src);
 
 
 EWRAM_BSS u8 autoA,autoB;				//0=off, 1=on, 2=R
-EWRAM_BSS u8 stime=0;
+u8 stime=3;	//autosleep OFF by default (not EWRAM_BSS: .sbss only allows zero init)
 EWRAM_BSS u8 autostate=0;
 
 //int selected;//selected menuitem.  used by all menus.

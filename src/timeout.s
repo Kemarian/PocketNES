@@ -805,7 +805,7 @@ addcycles:
 
 @MOVE THIS CRAP SOMEWHERE ELSE
 fiveminutes: .word 5*60*60
-sleeptime: .word 5*60*60
+sleeptime: .word 0x7F000000	@autosleep OFF by default (matches stime=3 in ui.c)
 	.byte 0
 	.byte 0
 	.byte 0
